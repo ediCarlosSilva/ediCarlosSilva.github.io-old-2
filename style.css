@@ -90,31 +90,33 @@ section.menu {
 /*Sessão Title*/
 
 section.title {
-    width: 90%;
+    width: 80%;
     height: calc(100vh - 85px);
     margin: 3rem auto;
+    box-sizing: border-box;
 }
 
 .title__div {
     display: flex;
 }
 
-.title__profile--box {
+.title__profile {
     display: inline-block;
-    border-radius: 50%;
     /* estouro: ocuto; */
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
     order: 2;
+    /* border: 1px solid black; */
+    /* background-image: url(./assets/profile.png);
+    background-repeat: no-repeat; */
+    width: 100%;
 }
 
 .title__profile {
     /* ajuste do objeto: capa; */
     /* object-fit: cover; */
-    width: 100%;
-    height: 100%;
-
 }
 
 .title__profile {
