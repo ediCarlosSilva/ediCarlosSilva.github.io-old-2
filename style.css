@@ -71,6 +71,7 @@ section.menu {
 
 .menu__title {
     color: var(--azul-claro);
+    margin-left: 2rem;
 }
 
 .menu nav a {
@@ -122,7 +123,7 @@ section.title {
 
 .title__network__item {
     display: inline;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .title__bio--front {
