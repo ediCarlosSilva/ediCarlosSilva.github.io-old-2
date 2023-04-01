@@ -91,13 +91,16 @@ section.menu {
 
 section.title {
     width: 80%;
-    height: calc(100vh - 85px);
+    height: calc(100vh - 180px);
     margin: 3rem auto;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 
 .title__div {
     display: flex;
+    align-items: center;
 }
 
 .title__profile {
@@ -105,21 +108,21 @@ section.title {
     /* estouro: ocuto; */
     overflow: hidden;
     border-radius: 50%;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 200px;
+    max-height: 200px;
     order: 2;
-    /* border: 1px solid black; */
-    /* background-image: url(./assets/profile.png);
-    background-repeat: no-repeat; */
     width: 100%;
-}
-
-.title__profile {
-    /* ajuste do objeto: capa; */
+    margin-left: 1rem;
     /* object-fit: cover; */
 }
 
-.title__profile {
+.title__subsection {
+    margin: 3rem 0;
+}
+
+.title__network__item {
+    display: inline;
+    margin-left: 1rem;
 }
 
 .title__bio--front {
