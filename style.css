@@ -128,7 +128,7 @@ section.title {
 
 .title__bio--front {
     display: inline-block;
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Fasthand', cursive;
     font-size: 2.2rem;
     color: var(--cinza-escuro);
 }
