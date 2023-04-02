@@ -123,9 +123,42 @@ section.title {
 
 .title__network__item {
     display: inline;
-    margin-left: 2rem;
 }
 
+.title__network__item a {
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.title__network__item a {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 2rem;
+    background-size: 2rem;
+}
+
+
+.title__network__item a[href*="facebook"] {
+    background-image: url(./assets/facebook.png);
+    text-indent: -9999px;
+}
+
+.title__network__item a[href*="github"] {
+    background-image: url(./assets/github.png);
+    text-indent: -9999px;
+}
+
+.title__network__item a[href*="instagram"] {
+    background-image: url(./assets/instagram.png);
+    text-indent: -9999px;
+}
+
+.title__network__item a[href*="linkedin"] {
+    background-image: url(./assets/linkedin.png);
+    text-indent: -9999px;
+}
 .title__bio--front {
     display: inline-block;
     font-family: 'Fasthand', cursive;
@@ -136,6 +169,7 @@ section.title {
 .title__bio--front:last-child {
     padding-top: 1rem;
 }
+
 
 /*Sessão About*/
 
