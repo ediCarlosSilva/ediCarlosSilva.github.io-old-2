@@ -256,7 +256,11 @@ section.hobbies {}
 /* Experiência Acadêmica*/
 
 section.academic {
-    height: 100vh;
+    height: calc(100vh - 20px);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
 }
 
 .academic__title {
@@ -265,6 +269,7 @@ section.academic {
 
 .academic__courses {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
