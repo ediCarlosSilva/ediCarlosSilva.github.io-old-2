@@ -93,7 +93,7 @@ section.menu {
 section.title {
     width: 80%;
     height: calc(100vh - 180px);
-    margin: 3rem auto;
+    margin: 0 auto;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -173,7 +173,34 @@ section.title {
 
 /*Sessão About*/
 
-section.about {}
+section.about {
+    width: 90%;
+    height: calc(100vh - 110px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__container {
+    
+    /* align-items: center; */
+}
+
+.about__title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about__paragraph {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.about__paragraph:nth-child(2) {
+    text-indent: 2rem;
+}
 
 /*Sessão Hobbies*/
 
