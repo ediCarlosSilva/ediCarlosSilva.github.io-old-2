@@ -6,7 +6,7 @@ coloque nas sessões indicadas*/
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --branco-suave: #F5F5F5;
-    --cor-de-link: #000;
+    --cor-de-link: #464646;
     --azul-claro: #aceff9;
     --preto-transparente: rgba(18, 18, 18, .95);
     --cinza-escuro: #878787;
@@ -19,6 +19,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+    color: var(--cor-de-link);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ol,
@@ -175,16 +177,18 @@ section.title {
 
 section.about {
     width: 90%;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 30px);
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
+    align-items: center;
 }
 
 .about__container {
     
     /* align-items: center; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .about__title {
@@ -203,6 +207,46 @@ section.about {
 }
 
 /* Skills */
+
+section.skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills__title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills__box {
+    display: inline-block;
+    width: 176px;
+    height: 174px;
+}
+
+.skills__name {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.skills__img img[src*="linux"] {
+    width: 32px;
+    height: 30px;
+}
+
+.skills__img img[src*="others"] {
+    width: 32px;
+    height: 30px;
+}
 
 /*Sessão Hobbies*/
 
