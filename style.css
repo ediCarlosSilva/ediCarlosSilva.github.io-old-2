@@ -6,6 +6,7 @@ coloque nas sessões indicadas*/
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --branco-suave: #F5F5F5;
+    --branco: #fff;
     --cor-de-link: #464646;
     --azul-claro: #aceff9;
     --preto-transparente: rgba(18, 18, 18, .95);
@@ -275,13 +276,13 @@ section.academic {
 }
 
 .academic__courses__list {
-    width: 368px;
-    height: 286px;
-    background-color: var(--branco-suave);
     padding: 0;
 }
 
 .academic__courses__item__img {
+    background-color: var(--branco);
+    width: 368px;
+    height: 286px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,23 +317,32 @@ section.experience {
 }
 
 .experience__jobs__list {
-    width: 368px;
-    height: 286px;
-    background-color: var(--branco-suave);
     padding: 0;
 }
 
 .experience__jobs__item__img {
+    background-color: var(--branco);
+    width: 368px;
+    height: 286px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 16px;
 }
 
+.experience__Jobs__item--boxImage {
+    width: 192px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+
 .experience__jobs__item__img img, img[src*="Fatec-sorocaba"]{
     max-width: 192px;
     max-height: 130px;
-    margin: 78px 88px;
+    /* margin: 78px 88px; */
 }
 
 .experience__jobs__item__subtitle {
