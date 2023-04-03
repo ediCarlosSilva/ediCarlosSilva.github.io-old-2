@@ -294,9 +294,56 @@ section.academic {
     margin: 78px 88px;
 }
 
+/* Experiência Profissional */
+
+section.experience {
+    height: calc(100vh - 20px);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.experience__title {
+    text-align: center;
+}
+
+.experience__jobs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.experience__jobs__list {
+    width: 368px;
+    height: 286px;
+    background-color: var(--branco-suave);
+    padding: 0;
+}
+
+.experience__jobs__item__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.experience__jobs__item__img img, img[src*="Fatec-sorocaba"]{
+    max-width: 192px;
+    max-height: 130px;
+    margin: 78px 88px;
+}
+
+.experience__jobs__item__subtitle {
+    font-weight: bold;
+}
+
+
+
 /* experiência*/
 
-section.experience {}
+/* section.experience {} */
 
 /*Contato*/
 
