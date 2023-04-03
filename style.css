@@ -351,7 +351,29 @@ section.experience {
 
 
 
-/* experiência*/
+/* projetos */
+.projetos__section__title {
+    text-align: center;
+}
+
+.projetos__content {
+    display: flex;
+    /* width: 90%; */
+    justify-content: space-around;
+}
+
+.projeto {
+    width: 30%;
+}
+
+.projeto--imagem {
+}
+
+.projeto--imagem img {
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+}
 
 /* section.experience {} */
 
