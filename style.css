@@ -1,6 +1,9 @@
 /*CSS Reset / Normalize*/
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
+html {
+    height: 100%;
+}
 
 :root {
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
@@ -9,6 +12,7 @@ coloque nas sessões indicadas*/
     --branco: #fff;
     --cor-de-link: #464646;
     --azul-claro: #aceff9;
+    --azul-escuro: #2A7AE4;
     --preto-transparente: rgba(18, 18, 18, .95);
     --cinza-escuro: #878787;
     --fundo-tela: #EDEDED;
@@ -163,6 +167,7 @@ section.title {
     background-image: url(./assets/linkedin.png);
     text-indent: -9999px;
 }
+
 .title__bio--front {
     display: inline-block;
     font-family: 'Fasthand', cursive;
@@ -188,7 +193,7 @@ section.about {
 }
 
 .about__container {
-    
+
     /* align-items: center; */
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -289,7 +294,8 @@ section.academic {
     padding: 16px;
 }
 
-.academic__courses__item__img img, img[src*="Fatec-sorocaba"]{
+.academic__courses__item__img img,
+img[src*="Fatec-sorocaba"] {
     max-width: 192px;
     max-height: 130px;
     margin: 78px 88px;
@@ -339,7 +345,8 @@ section.experience {
     background: white;
 }
 
-.experience__jobs__item__img img, img[src*="Fatec-sorocaba"]{
+.experience__jobs__item__img img,
+img[src*="Fatec-sorocaba"] {
     max-width: 192px;
     max-height: 130px;
     /* margin: 78px 88px; */
@@ -352,8 +359,25 @@ section.experience {
 
 
 /* projetos */
+.projetos__section--title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
 .projetos__section__title {
     text-align: center;
+}
+
+.projetos__section--imagem {
+    width: 28px;
+    margin: 0 2rem;
+}
+
+.projeto__section--mais {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .projetos__content {
@@ -366,13 +390,50 @@ section.experience {
     width: 30%;
 }
 
-.projeto--imagem {
+.projeto--imagem {}
+
+.projeto--descricao {
+    text-align: justify;
+    min-height: 48px;
 }
 
 .projeto--imagem img {
     border-radius: 15px;
     width: 100%;
     height: 300px;
+}
+
+.projeto__description{
+    display: flex;
+    justify-content: center;
+}
+
+.projeto__botao--repo, .projeto__botao--demo {
+    font-size: 1rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 105px;
+    height: 51px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    border-style: none;
+}
+
+.projeto__botao--repo, .projeto__botao--demo {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+.projeto__botao--repo:hover, .projeto__botao--demo:hover {
+    background-color: var(--branco);
+    color: var(--azul-escuro);
+    border: 1px solid var(--azul-escuro);
+    cursor: pointer;
 }
 
 /* section.experience {} */
@@ -383,7 +444,13 @@ section.formcontato {}
 
 /*footeer*/
 
-section.footer {}
+section.footer {
+    background-color: var(--cor-de-link);
+    color: var(--azul-claro);
+    font-weight: bold;
+    text-align: center;
+    padding: .5rem 0;
+}
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
