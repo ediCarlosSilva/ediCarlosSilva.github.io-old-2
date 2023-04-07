@@ -185,7 +185,7 @@ section.title {
     text-indent: -9999px;
 }
 
-.title__network__item a[href*="github"] {
+.title__network__item a[title="github"] {
     background-image: url(./assets/github.png);
     text-indent: -9999px;
 }
@@ -200,11 +200,14 @@ section.title {
     text-indent: -9999px;
 
 }
-.title__network__item a[href*="resume"] {
+.title__network__item a[title="Resume"] {
     background-image: url(./assets/resume.png);
     text-indent: -9999px;
 }
 
+.title__network__item a[title="View this pdf file"] {
+   display: none;
+}
 .title__bio--front {
     display: inline-block;
     font-family: 'Fasthand', cursive;
