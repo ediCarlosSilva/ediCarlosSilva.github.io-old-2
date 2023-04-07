@@ -198,6 +198,11 @@ section.title {
 .title__network__item a[href*="linkedin"] {
     background-image: url(./assets/linkedin.png);
     text-indent: -9999px;
+
+}
+.title__network__item a[href*="resume"] {
+    background-image: url(./assets/resume.png);
+    text-indent: -9999px;
 }
 
 .title__bio--front {
