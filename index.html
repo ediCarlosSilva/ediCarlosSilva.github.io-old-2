@@ -350,7 +350,7 @@
           </ul>
         </div>
         <div class="formcontato__text">
-          <form class="formcontato__form">
+          <form class="formcontato__form" id="my-form" action="https://formspree.io/f/xrgvozjb" method="POST">
             <div class="input-container">
               <input name="nome" id="nome" class="formcontato__input" type="text" placeholder="Nome" required>
               <label for="nome" class="input-label">Nome</label>
@@ -372,7 +372,8 @@
               <label for="mensagem" class="input-label">mensagem</label>
             </div>
 
-            <button class="formcontato__botao">Enviar mensagem</button>
+            <button class="formcontato__botao" id="my-form-status">Enviar mensagem</button>
+            <p  class="formcontato__mensagemEnviada"></p>
           </form>
         </div>
       </div>
@@ -389,6 +390,7 @@
   </div>
   <!-- Script Linkado do seu documento de JavaScript -->
   <script src="validate.js"></script>
+  <script src="enviaForm.js"></script>
 </body>
 
 </html>

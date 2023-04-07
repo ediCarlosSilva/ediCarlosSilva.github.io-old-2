@@ -440,8 +440,6 @@ img[src*="Fatec-sorocaba"] {
     width: 30%;
 }
 
-.projeto--imagem {}
-
 .projeto--descricao {
     text-align: justify;
     min-height: 48px;
@@ -644,6 +642,13 @@ section.formcontato {
     font-size: var(--fonte-tamanho-botao);
     align-self: center;
     text-align: center;
+}
+
+.formcontato__mensagemEnviada {
+    background-color: green;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
 }
 
 /*footeer*/
