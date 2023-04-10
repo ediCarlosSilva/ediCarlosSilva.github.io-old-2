@@ -3,6 +3,7 @@
 coloque nas sessões indicadas*/
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -37,6 +38,7 @@ body {
     line-height: 1;
     color: var(--cor-de-link);
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 ol,
@@ -75,6 +77,30 @@ https://en.bem.info/methodology/quick-start/*/
     width: 80%;
     margin: 0 auto;
 } */
+
+.btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
 
 section.menu {
     align-items: center;
@@ -737,6 +763,21 @@ utilize como referência os breakpoints @media abaixo*/
 /*Tablet*/
 @media (max-width: 768px) {
 
+    html, body {
+        scroll-behavior: smooth;
+        
+    }
+
+    .btn {
+        display: flex;
+    }
+
+    section.menu {
+        position: static;
+        /* position: -webkit-sticky;
+        top: 0; */
+    }
+
     /* Menu */
     .menu__list__item:nth-child(-n + 5) {
         display: none;
@@ -809,8 +850,49 @@ utilize como referência os breakpoints @media abaixo*/
     .academic__courses__item__subtitle {
         height: 2rem;
     }
-    /*Expeirência profissional*/
 
+    /* Projetos*/
+    .projetos__content {
+        flex-wrap: wrap;
+    }
+
+    .projeto {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    .projeto--descricao {
+        max-height: 64px;
+    }
+
+    .formcontato__contacto {
+        flex-direction: column;
+    }
+
+    section.formcontato {
+        padding: 2rem 0;
+    }
+
+    .formcontato__text {
+        width: 100vh;
+    }
+
+    .formcontato__title {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px),
+screen and (max-height: 100px) {
+    /* section.menu {
+        display: none;
+    } */
+}
+
+@media (max-height: 4000px) {
+    header {
+        display: none;
+    }
 }
 
 /*Mobile*/
