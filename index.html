@@ -52,11 +52,10 @@
       <div class="title__div">
         <img class="title__profile" src="assets\profile.png">
         <div class="title__container">
-          <h2 class="title__bio">Olá, meu nome é <span class="title__bio--front">Edi Carlos</span>. Sou <span
-              class="title__bio--front">Analista de
-              Sistemas</span> com skills de <br><span class="title__bio--front">front-end
+          <h2 class="title__bio">Hello! My name is <span class="title__bio--front">Edi Carlos</span>. I am a<span
+              class="title__bio--front">systems analyst and developer</span> with skills of <br><span class="title__bio--front">front-end
               developer</span> and other things.</h2>
-          <h3 class="title__subsection">Atualmente estou participando no projeto Oracle ONE na Alura.</h3>
+          <h3 class="title__subsection">I am currently participating in the <a class="title__subsection--links" href="https://www.oracle.com/br/education/oracle-next-education/">oracle ONE</a> project with <a class="title__subsection--links" href="https://www.alura.com.br/">Alura</a> (Online study platform focused on IT development technologies).</h3>
           <div class="title__network--box">
             <ul class="title__network">
               <li class="title__network__item"><a href="https://www.facebook.com/edicarlos.silva.5205622"
@@ -352,24 +351,28 @@
         <div class="formcontato__text">
           <form class="formcontato__form" id="my-form" action="https://formspree.io/f/xrgvozjb" method="POST">
             <div class="input-container">
-              <input name="nome" id="nome" class="formcontato__input" type="text" placeholder="Nome" required>
-              <label for="nome" class="input-label">Nome</label>
+              <input name="nome" id="nome" class="formcontato__input" type="text" placeholder="Nome" required maxlength="51">
+              <label for="nome" class="input-label" id="inputLabelNome">Nome</label>
+              <span class="mensagem-erro-nome">Apenas 50 caracteres.</span>
             </div>
 
             <div class="input-container">
-              <input name="email" id="email" class="formcontato__input" type="email" placeholder="Email" required>
-              <label for="email" class="input-label">Email</label>
+              <input name="email" id="email" class="formcontato__input" type="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+              <label for="email" class="input-label" id="input__label--email">Email</label>
+              <span class="mensagem-erro-email">Formato de E-mail inválido.</span>
             </div>
 
             <div class="input-container">
-              <input name="assunto" id="assunto" class="formcontato__input" type="text" placeholder="Assunto" required>
-              <label for="assunto" class="input-label">Assunto</label>
+              <input name="assunto" id="assunto" class="formcontato__input" type="text" placeholder="Assunto" required maxlength="51">
+              <label for="assunto" class="input-label" id="inputLabelAssunto">Assunto</label>
+              <span class="mensagem-erro-assunto">Apenas 50 caracteres.</span>
             </div>
 
             <div class="input-container">
               <textarea name="mensagem" id="mensagem" class="formcontato__textarea" rows="5" cols="40" name="mensagem"
-                placeholder="Sua mensagem" required></textarea>
-              <label for="mensagem" class="input-label">mensagem</label>
+                placeholder="Sua mensagem" required maxlength="301"></textarea>
+              <label for="mensagem" class="input-label" id="labelTextareaMensagem">mensagem</label>
+              <span class="mensagem-erro-textarea">Apenas 300 caracteres.</span>
             </div>
 
             <button class="formcontato__botao" id="my-form-status">Enviar mensagem</button>
@@ -389,8 +392,8 @@
     </section>
   </div>
   <!-- Script Linkado do seu documento de JavaScript -->
-  <script src="validate.js"></script>
-  <script src="enviaForm.js"></script>
+  <script src="js/app.js" type="module"></script>
+  <!-- <script src="js/enviaForm.js"></script> -->
 </body>
 
 </html>

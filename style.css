@@ -25,6 +25,7 @@ html {
     --cor-primaria: #0071ea;
     --cor-contraste-claro: #fff;
     --fonte-tamanho-botao: 1.2rem;
+    --vermelho-primario: #cd0000;
 }
 
 body {
@@ -122,6 +123,11 @@ section.title {
     justify-content: center;
 }
 
+.title__subsection--links {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 .title__div {
     display: flex;
     align-items: center;
@@ -200,14 +206,16 @@ section.title {
     text-indent: -9999px;
 
 }
+
 .title__network__item a[title="Resume"] {
     background-image: url(./assets/resume.png);
     text-indent: -9999px;
 }
 
 .title__network__item a[title="View this pdf file"] {
-   display: none;
+    display: none;
 }
+
 .title__bio--front {
     display: inline-block;
     font-family: 'Fasthand', cursive;
@@ -256,6 +264,8 @@ section.about {
 /* Skills */
 
 section.skills {
+    width: 90%;
+    margin: 0 auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -269,25 +279,29 @@ section.skills {
 
 .skills__line {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .skills__box {
-    display: inline-block;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
     width: 176px;
     height: 174px;
+    background-color: var(--branco);
+    margin-top: 1.5rem;
 }
 
 .skills__name {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 .skills__img {
-    text-align: center;
+    text-align: left;
 }
 
 .skills__img img[src*="linux"] {
@@ -299,10 +313,6 @@ section.skills {
     width: 32px;
     height: 30px;
 }
-
-/*Sessão Hobbies*/
-
-section.hobbies {}
 
 /* Experiência Acadêmica*/
 
@@ -345,6 +355,10 @@ img[src*="Fatec-sorocaba"] {
     max-height: 130px;
     margin: 78px 88px;
 }
+
+/* .academic__courses__item__title {
+    line-height: 2rem;
+}  */
 
 /* Experiência Profissional */
 
@@ -574,7 +588,7 @@ section.formcontato {
 .input-container {
     font-weight: var(--fonte-peso-input);
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -588,6 +602,7 @@ section.formcontato {
     padding: 1.375rem 0.8rem 0.5rem;
     height: 3.35rem;
     width: 100%;
+    font-size: 1.2rem;
 }
 
 .formcontato__textarea {
@@ -618,6 +633,8 @@ section.formcontato {
     transition: all .25s;
 }
 
+
+
 .formcontato__input:not(:placeholder-shown)+.input-label,
 .formcontato__input:focus+.input-label,
 .formcontato__textarea:not(:placeholder-shown)+.input-label,
@@ -627,6 +644,53 @@ section.formcontato {
     transition: all .25s;
     color: var(--preto);
     font-weight: bold;
+}
+
+.formcontato__input:not(:placeholder-shown)+.input-label--invalido,
+.formcontato__input:focus+.input-label--invalido {
+    color: var(--vermelho-primario);
+}
+
+.formcontato__textarea:not(:placeholder-shown)+.input-label--invalido,
+.formcontato__textarea:focus+.input-label--invalido {
+    color: var(--vermelho-primario);
+}
+
+.formcontato__input--invalido {
+    border: 2px solid var(--vermelho-primario);
+    color: var(--vermelho-primario);
+}
+
+.mensagem-erro-nome {
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+    color: var(--vermelho-primario);
+    visibility: hidden;
+    font-weight: bold;
+}
+
+.mensagem-erro-email {
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+    color: var(--vermelho-primario);
+    visibility: hidden;
+    font-weight: bold;
+}
+
+.mensagem-erro-assunto {
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+    color: var(--vermelho-primario);
+    visibility: hidden;
+    font-weight: bold;
+}
+
+.mensagem-erro-textarea {
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--vermelho-primario);
+    visibility: hidden;
 }
 
 .formcontato__botao {
@@ -651,6 +715,12 @@ section.formcontato {
     font-weight: bold;
 }
 
+.formcontato__textarea {
+    resize: none;
+}
+
+
+
 /*footeer*/
 
 section.footer {
@@ -665,18 +735,80 @@ section.footer {
 utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
     /* Menu */
+    .menu__list__item:nth-child(-n + 5) {
+        display: none;
+    }
 
     /*title*/
+    section.title {
+        width: 90%;
+        height: calc(100vh - 110px);
+    }
+
+    .title__bio--front {
+        line-height: 3.5rem;
+    }
+
+    .title__subsection {
+        font-weight: 400;
+        line-height: 2rem;
+    }
+
+    .about__paragraph {
+        font-size: 1rem;
+    }
 
     /*Skills*/
+    .skills__line {
+        justify-content: space-around;
+    }
+
+    .skills__box {
+        width: 224px;
+    }
 
     /*Hobbies*/
 
     /*Experiências acadêmicas*/
+    section.academic {
+        height: 100%;
+    }
 
+    .academic__courses__box {
+        /* width: 30%; */
+    }
+
+    .academic__courses__list {
+        width: 224px;
+    }
+
+    .academic__courses__item__img {
+        width: 192px;
+        height: 118px;
+        padding: 1rem;
+    }
+
+    .academic__courses__item__img img {
+        margin: 0;
+        width: 84px;
+        height: 58px;
+    }
+
+    .academic__courses__item__title {
+        /* line-height: 2rem; */
+    }
+
+    .academic__courses__item__title h4 {
+        /* line-height: 1.2rem; */
+        height: 39px;
+    }
+
+    .academic__courses__item__subtitle {
+        height: 2rem;
+    }
     /*Expeirência profissional*/
 
 }
