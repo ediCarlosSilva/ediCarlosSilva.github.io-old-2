@@ -724,7 +724,6 @@ section.formcontato {
     background-color: var(--cor-primaria);
     border-radius: 7px;
     width: 100%;
-    margin-top: 1rem;
     max-width: 20rem;
     padding: 1rem;
     box-sizing: border-box;
@@ -870,7 +869,11 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     section.formcontato {
-        padding: 2rem 0;
+        padding: 1rem 0;
+    }
+
+    .formcontato__botao {
+        margin-top: 0;
     }
 
     .formcontato__text {
@@ -882,12 +885,6 @@ utilize como referência os breakpoints @media abaixo*/
     }
 }
 
-@media screen and (max-width: 768px),
-screen and (max-height: 100px) {
-    /* section.menu {
-        display: none;
-    } */
-}
 
 @media (max-height: 4000px) {
     header {
