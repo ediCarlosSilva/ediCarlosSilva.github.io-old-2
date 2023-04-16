@@ -817,10 +817,6 @@ utilize como referência os breakpoints @media abaixo*/
         height: 100%;
     }
 
-    .academic__courses__box {
-        /* width: 30%; */
-    }
-
     .academic__courses__list {
         width: 224px;
     }
@@ -835,10 +831,6 @@ utilize como referência os breakpoints @media abaixo*/
         margin: 0;
         width: 84px;
         height: 58px;
-    }
-
-    .academic__courses__item__title {
-        /* line-height: 2rem; */
     }
 
     .academic__courses__item__title h4 {
@@ -885,15 +877,12 @@ utilize como referência os breakpoints @media abaixo*/
     }
 }
 
-
-@media (max-height: 4000px) {
-    header {
-        display: none;
-    }
-}
-
 /*Mobile*/
 @media (max-width: 412px) {
+
+    .btn {
+        z-index: 1;
+    }
 
     /*Menu*/
 
