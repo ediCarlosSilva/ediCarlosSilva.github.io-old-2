@@ -893,15 +893,71 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 412px) {
 
     /*Menu*/
 
     /*Titulo*/
+    section.title {
+        margin-top: 1rem;
+        height: 100%;
+    }
+
+    .title__div {
+        flex-direction: column;
+    }
+
+    .title__profile {
+        order: 0;
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .title__bio {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    .title__bio--front {
+        font-size: 1.5rem;
+        line-height: 0;
+    }
+
+    .title__bio--front:last-child {
+        padding: 0;
+    }
+
+    .title__subsection {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .title__network--box {
+        gap: 10px;
+    }
+
+    .title__network--name {
+        text-align: center;
+    }
+
 
     /*Sessão sobre*/
+    section.about {
+        height: 100%;
+    }
+
+    .about__title {
+        margin: 0 0 1rem 0;
+    }
+
+    .about__paragraph {
+        line-height: 1.5rem;
+    }
 
     /*Skills*/
+    section.skills{
+        height:  100%;
+    }
 
     /*Hobbies*/
 
