@@ -990,8 +990,54 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     /*Experiência Profissional*/
+    section.experience {
+        height: auto;
+    }
+
+    .experience__title {
+        margin: 1rem 0;
+    }
+
+    .experience__jobs__item__img {
+        padding: 0;
+        height: auto;
+    }
+
+    /* Projetos */
+
+    section.projetos {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .projetos__section--title {
+        margin-bottom: 0;
+    }
+
+    .projeto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projeto--conteudo {
+        order: -1;
+    }
+
+    .projeto__description {
+        margin-top: 1rem;
+    }
+    
+    .projeto--descricao {
+        line-height: 1.3rem;
+    }
 
     /*Contato*/
+
+    .formcontato__network {
+        width: 100%;
+        display: flex;
+    }
 
     /*Footer*/
 
