@@ -382,7 +382,7 @@
             </div>
 
             <div class="input-container">
-              <input name="email" id="email" class="formcontato__input" type="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+              <input name="email" id="email" class="formcontato__input" type="email" placeholder="Email" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
               <label for="email" class="input-label" id="input__label--email">Email</label>
               <span class="mensagem-erro-email">Invalid E-mail format.</span>
             </div>
@@ -417,7 +417,7 @@
   </div>
   <!-- Script Linkado do seu documento de JavaScript -->
   <script src="js/app.js" type="module"></script>
-  <!-- <script src="js/enviaForm.js"></script> -->
+  <script src="js/enviaForm.js"></script>
 </body>
 
 </html>

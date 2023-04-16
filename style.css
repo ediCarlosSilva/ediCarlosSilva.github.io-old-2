@@ -943,6 +943,8 @@ utilize como referência os breakpoints @media abaixo*/
 
     .btn {
         z-index: 1;
+        bottom: 40px;
+        right: 25px;
     }
 
     /*Menu*/
