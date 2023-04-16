@@ -1039,6 +1039,10 @@ utilize como referência os breakpoints @media abaixo*/
         display: flex;
     }
 
+    .formcontato__contacto {
+        width: 90%;
+    }
+
     /*Footer*/
 
 }
