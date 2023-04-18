@@ -1,3 +1,3 @@
-# My home page
+# My home page.
 
 https://ediCarlosSilva.github.io
