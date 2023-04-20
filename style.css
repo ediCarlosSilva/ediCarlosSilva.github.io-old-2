@@ -376,6 +376,11 @@ section.hobbies {
     height: 174px;
     background-color: var(--branco);
     margin-top: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.hobbies__box:hover {
+    transform: translate(0, -1rem);
 }
 
 .hobbies__box ul {
@@ -427,6 +432,14 @@ section.academic {
     flex-wrap: wrap;
 }
 
+.academic__courses__box {
+    transition: transform 0.2s;
+}
+
+.academic__courses__box:hover {
+    transform: translate(0, -1rem);
+}
+
 .academic__courses__list {
     padding: 0;
 }
@@ -460,6 +473,14 @@ section.experience {
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
+}
+
+.experience__jobs__box {
+    transition: transform 0.2s;
+}
+
+.experience__jobs__box:hover {
+    transform: translate(0, -1rem);
 }
 
 .experience__title {
@@ -544,6 +565,11 @@ img[src*="Fatec-sorocaba"] {
 
 .projeto {
     width: 30%;
+    transition: transform 0.2s;
+}
+
+.projeto:hover {
+    transform: translate(0, -1rem);
 }
 
 .projeto--descricao {
