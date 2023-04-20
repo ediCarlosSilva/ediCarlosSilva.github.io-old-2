@@ -317,6 +317,11 @@ section.skills {
     height: 174px;
     background-color: var(--branco);
     margin-top: 1.5rem;
+    transition: transform .2s;
+}
+
+.skills__box:hover {
+    transform: translate(0, -1rem);
 }
 
 .skills__name {
